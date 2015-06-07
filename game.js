@@ -24,13 +24,13 @@ function init() {
 	socket = io.listen(8000);
 
 	// Configure Socket.IO
-	socket.configure(function() {
+	/*socket.configure(function() {
 		// Only use WebSockets
 		socket.set("transports", ["websocket"]);
 
 		// Restrict log output
 		socket.set("log level", 2);
-	});
+	});*/
 
 	// Start listening for events
 	setEventHandlers();
